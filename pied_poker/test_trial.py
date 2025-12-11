@@ -12,7 +12,7 @@ def test_trial(cards_list, community_cards_list, total_players, num_simulations)
 
     # 3. Correctly determine the number of opponents and create them
     num_opponents = total_players - 1
-    opponents = {f'p{i}': pp.Player(f'Player {i+1}') for i in range(num_opponents)}
+    opponents = {f'p{i}': pp.player(f'Player {i+1}') for i in range(num_opponents)}
 
     # 4. Initialize the simulator with ALL players
     simulator = pp.PokerRound.PokerRoundSimulator(
