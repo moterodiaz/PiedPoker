@@ -5,7 +5,7 @@ def test_trial(cards_list, community_cards_list, total_players, num_simulations)
     np.random.seed(420)
 
     # 1. Correctly create your player (p1) from the list of card strings
-    p1 = pp.Player('You', pp.Card.of(cards_list[0]), pp.Card.of(cards_list[1]))
+    p1 = pp.player('You', pp.Card.of(cards_list[0]), pp.Card.of(cards_list[1]))
 
     # 2. Correctly create the list of community cards from the list of card strings
     community_cards = [pp.Card.of(card_str) for card_str in community_cards_list]
